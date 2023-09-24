@@ -1,14 +1,15 @@
 import './AsideMenu.scss';
+import { NavLink } from 'react-router-dom';
 
 function AsideMenu() {
   return (
     <div className="AsideMenu">
       <nav>
         <ul className='AsideMenu__List'>
-          <li className='AsideMenu__Item'>Home</li>
-          <li className='AsideMenu__Item'>Products</li>
-          <li className='AsideMenu__Item'>Contacts</li>
-          <li className='AsideMenu__Item'>Cabinet</li>
+          <li className='AsideMenu__Item'><NavLink to="/" activeClassName="active">Home</NavLink></li>
+          <li className='AsideMenu__Item'><NavLink to="/products" activeClassName="active">Products</NavLink></li>
+          <li className='AsideMenu__Item'><NavLink to="/contacts" activeClassName="active">Contacts</NavLink></li>
+          <li className='AsideMenu__Item'><NavLink to="/cabinet" activeClassName="active">Cabinet</NavLink></li>
         </ul>
       </nav>
     </div>

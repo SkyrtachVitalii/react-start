@@ -1,4 +1,5 @@
 import './Product.scss';
+import { Link } from 'react-router-dom';
 
 function Product(props){
     let {product} = props;
@@ -10,7 +11,7 @@ function Product(props){
             <div className="Product__title">{product.title}</div>
             <div className="Product__description">{product.description}</div>
             <div className="Product__price">{product.price}</div>
-            <button className="Product__button">Детально</button>
+            <Link to={'/products/' + product.id} className="Product__button">Детально</Link>
         </div>
     );
 }

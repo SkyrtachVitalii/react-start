@@ -8,7 +8,15 @@
 
     &__Item{
         border-bottom: 1px solid #fff;
-        color: #ccc;
-        padding: 10px 15px;
+        & a{
+            text-decoration: none;
+            color: #ccc;
+            padding: 10px 15px;
+            display: block;
+            transition: all 0.3s;
+            & .active, :hover{
+                background-color: #555;
+            }
+        }
     }
 }
