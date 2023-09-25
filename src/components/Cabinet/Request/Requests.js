@@ -32,18 +32,7 @@ class Requests extends React.Component{
     }
 
     render(){
-        let request = {
-            product: {
-                name: "iPhone",
-                price: '1000$',
-                comment: 'only black'
-            },
-            customer: {
-                firstName: "Vitalii",
-                lastName: 'Skyrtach',
-                isRegister: true
-            }
-        }
+        let {request} = this.props;
 
         return(
             <div className="Requests">
